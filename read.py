@@ -24,6 +24,13 @@ for d in data:
     if len(d) < 100:
         new.append(d)
 print('一共有', len(new),'筆留言長度小於100')
-print('第一筆資料:',data[0])
+#print('第一筆資料:',data[0])
 
 #篩選字數低於100的資料
+
+good = []
+for d in data:
+    if 'good' in d:
+        good.append(d)
+print('一共有',len(good), '筆留言提到good')
+print(good[0])
